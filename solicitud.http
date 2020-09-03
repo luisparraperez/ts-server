@@ -1,0 +1,53 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "usuario":"luisito",
+    "clave":"1234"
+}
+###
+
+GET http://localhost:8080/usuario?id=1234
+Authorization: wbapot2vicg
+
+###
+GET http://localhost:8080/infoSistema
+
+###
+
+GET http://localhost:8080/usuario?email=prueba
+Authorization: v38yxlnfeg7
+
+
+###
+
+DELETE http://localhost:8080/usuario?id=ih17ufq6jg
+Authorization: te69virs9kq
+
+
+###
+PUT http://localhost:8080/usuario
+Authorization: 7v9i99bsm7c
+Content-Type: application/json
+
+{
+    "edad":30,
+    "email":"prueba3@email.cl",
+    "cargo": 1,
+    "nombre":"Luis Parra"
+
+}
+
+###
+
+POST http://localhost:8080/usuario?id=nnrzdc1dxr
+Authorization: 7v9i99bsm7c
+Content-Type: application/json
+
+{
+    "edad":43,
+    "email":"alibaa@email.cl",
+    "cargo": 1,
+    "nombre":"Luis Parra Perez"
+
+}
